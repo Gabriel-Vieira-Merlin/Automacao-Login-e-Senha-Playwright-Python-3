@@ -1,9 +1,6 @@
 #Importando a função sync_playwright da biblioteca playwrigth
 from playwright.sync_api import sync_playwright
 
-#Importando a biblioteca time para visualizar a página melhor
-import time
-
 #Criando o navegador
 with sync_playwright() as p:
     navegador = p.chromium.launch()
